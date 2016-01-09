@@ -151,3 +151,4 @@
 (add-to-list 'auto-mode-alist '("\\.hax\\'" . haxor-mode))
 
 (provide 'haxor-mode)
+;;; haxor-mode.el ends here
