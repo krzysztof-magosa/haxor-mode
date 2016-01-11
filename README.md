@@ -1,4 +1,5 @@
 # Major mode for editing Haxor Assembly Files
+[![MELPA Stable](http://stable.melpa.org/packages/haxor-mode-badge.svg)](http://stable.melpa.org/#/haxor-mode)
 
 ![Screenshot](haxor.png "")
 
