@@ -6,7 +6,7 @@
 ;; URL: https://github.com/krzysztof-magosa/haxor-mode
 ;; Package-Requires: ((emacs "24.0"))
 ;; Created: 09 January 2015
-;; Version: 0.1.0
+;; Version: 0.2.0
 ;; Keywords: haxor
 
 ;; Permission is hereby granted, free of charge, to any person obtaining a copy
