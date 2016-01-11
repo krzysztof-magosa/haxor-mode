@@ -32,7 +32,7 @@
 
 ;;; Code:
 
-(defvar haxor-events
+(defvar haxor--events
   '("$zero"
     "$at"
 
@@ -63,7 +63,7 @@
     "$ra"
     "$sc"))
 
-(defvar haxor-keywords
+(defvar haxor--keywords
   '(;; pseudo instructions
     "section"
     "dw"
@@ -129,12 +129,20 @@
      (".*:" . font-lock-function-name-face)
      ;; special characters
      (":\\|,\\|;\\|{\\|}\\|=>\\|@\\|$\\|=" . font-lock-keyword-face)
-     ( ,(regexp-opt haxor-keywords 'words) . font-lock-builtin-face)
-     ( ,(regexp-opt haxor-events 'words) . font-lock-constant-face)
+     ( ,(regexp-opt haxor--keywords 'words) . font-lock-builtin-face)
+     ( ,(regexp-opt haxor--events 'words) . font-lock-constant-face)
      ;; registers
      ("$[0-9]+" . font-lock-constant-face))))
 
-(defvar haxor-tab-width 2 "Width of tab for Haxor Mode")
+(defgroup haxor nil
+  "Major mode for editing .hax files."
+  :group 'languages)
+
+(defcustom haxor-tab-width 2
+  "Width of tab for Haxor Mode"
+  :tag "Tab width"
+  :type 'integer
+  :group 'haxor)
 
 ;;;###autoload
 (define-derived-mode haxor-mode fundamental-mode "Haxor Assembly"
@@ -146,9 +154,6 @@
 
   (setq comment-start "#")
   (setq comment-end ""))
-
-;;;###autoload
-(add-to-list 'auto-mode-alist '("\\.hax\\'" . haxor-mode))
 
 (provide 'haxor-mode)
 ;;; haxor-mode.el ends here
