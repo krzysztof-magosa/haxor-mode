@@ -1,4 +1,4 @@
-;;; haxor-mode.el --- Major mode for exiting .hax files
+;;; haxor-mode.el --- Major mode for editing Haxor Assembly Files
 
 ;; Copyright (c) 2015 Krzysztof Magosa
 
