@@ -132,7 +132,8 @@
      ( ,(regexp-opt haxor--keywords 'words) . font-lock-builtin-face)
      ( ,(regexp-opt haxor--events 'words) . font-lock-constant-face)
      ;; registers
-     ("$[0-9]+" . font-lock-constant-face))))
+     ("$[0-9]+" . font-lock-constant-face)
+     ("#.*" . font-lock-comment-face))))
 
 (defgroup haxor nil
   "Major mode for editing .hax files."
