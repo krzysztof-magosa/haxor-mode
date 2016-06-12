@@ -131,12 +131,12 @@
      ("\"\\.\\*\\?" . font-lock-string-face)
      ;; labels
      ("[a-zA-Z][a-zA-Z_0-9]*:" . font-lock-function-name-face)
-     ;; special characters
-     (":\\|,\\|;\\|{\\|}\\|=>\\|@\\|\\$\\|=" . font-lock-keyword-face)
      ( ,(regexp-opt haxor--keywords 'words) . font-lock-builtin-face)
      ( ,(regexp-opt haxor--events 'words) . font-lock-constant-face)
      ;; registers
-     ("$[0-9]+" . font-lock-constant-face))))
+     ("$[0-9]+" . font-lock-constant-face)
+     ;; special characters
+     (":\\|,\\|;\\|{\\|}\\|=>\\|@\\|\\$\\|=" . font-lock-keyword-face))))
 
 (defgroup haxor nil
   "Major mode for editing .hax files."
