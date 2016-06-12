@@ -130,7 +130,7 @@
      ;; stuff enclosed in "
      ("\"\\.\\*\\?" . font-lock-string-face)
      ;; labels
-     (".*:" . font-lock-function-name-face)
+     ("[a-zA-Z][a-zA-Z_0-9]*:" . font-lock-function-name-face)
      ;; special characters
      (":\\|,\\|;\\|{\\|}\\|=>\\|@\\|$\\|=" . font-lock-keyword-face)
      ( ,(regexp-opt haxor--keywords 'words) . font-lock-builtin-face)
