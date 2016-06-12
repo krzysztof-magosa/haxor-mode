@@ -150,7 +150,7 @@
   :group 'haxor)
 
 ;;;###autoload
-(define-derived-mode haxor-mode fundamental-mode "Haxor Assembly"
+(define-derived-mode haxor-mode prog-mode "Haxor Assembly"
   "Haxor Mode for editing Haxor Assembly Files"
 
   (setq font-lock-defaults haxor-font-lock-defaults)
